@@ -2,15 +2,19 @@
     border: 1rem dotted black;
     border-radius: 25px;
     height: 300px;
+    max-width: 472px;
 }
 .gallery {
-    column-count: 2;
-    column-gap: 0;
-    column-width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: -8px;
+    max-height: 2500px;
+    max-width: 472px;
   }
   .imagePanel {
-    break-inside: avoid;
-    padding: 5px;
+    margin: 0 8px 8px 0;
+    width: 48%;
+    max-width: 236px;
   }
   .image {
     padding: 10px;
@@ -24,8 +28,11 @@
   }
   @media (min-width: 768px) {
     .gallery {
-    column-width: 236px;
-    column-count: auto;
+        width: 100vw;
+        max-height: 100vh;
+    }
+    .imagePanel {
+        width: 236px;
     }
     .header{
         float: left;
