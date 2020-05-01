@@ -1,0 +1,15 @@
+.gallery {
+    column-count: 2;
+    column-gap: 0;
+  }
+  .imagePanel {
+    break-inside: avoid;
+    padding: 5px;
+  }
+  .image {
+    padding: 10px;
+    border-radius: 25px;
+  }
+  img {
+      border-radius: 25px;
+  }
