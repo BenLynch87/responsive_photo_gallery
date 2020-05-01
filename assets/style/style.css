@@ -1,6 +1,12 @@
+.header {
+    border: 1rem dotted black;
+    border-radius: 25px;
+    height: 300px;
+}
 .gallery {
     column-count: 2;
     column-gap: 0;
+    column-width: 50%;
   }
   .imagePanel {
     break-inside: avoid;
@@ -9,7 +15,20 @@
   .image {
     padding: 10px;
     border-radius: 25px;
+    overflow: hidden;
+    max-width: 236px;
   }
   img {
-      border-radius: 25px;
+    width: 100%;
+    border-radius: 25px;
+  }
+  @media (min-width: 768px) {
+    .gallery {
+    column-width: 236px;
+    column-count: auto;
+    }
+    .header{
+        float: left;
+        max-width: 236px;
+    }
   }
